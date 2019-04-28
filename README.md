@@ -1,7 +1,14 @@
 # Lambda Layers Demo
 The Demo was presented at the Israel AWS User Group meetup - Deep dive into new AWS services - Lambda Layers & Firecracker Container.
 
+In this demo we will deploy two Lambda function:
+- Lambda with my_lambda_utils deployed with the function, the "old way" - no layers.
+- Lambda deployed with my_lambda_utils as a Lambda Layers. 
+
 ## Instructions
+
+We will use the serverless framework in this example.
+For more details: https://serverless.com/
 
 ### ZIP the Python files into a Lambda package
 For hello-world-no-layers Lambda Function
