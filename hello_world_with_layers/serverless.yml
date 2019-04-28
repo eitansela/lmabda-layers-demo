@@ -1,0 +1,26 @@
+service: example-with-layers
+
+provider:
+  name: aws
+  region: eu-west-1
+  cfLogs: true
+
+package:
+  artifact: lambda_code.zip
+
+layers:
+  HelloWorldPythonDeps:
+    path: deps
+    name: hello-world-python-deps
+    description: hello world Lambda python dependencies
+    compatibleRuntimes:
+    - python2.7
+
+functions:
+  hello-world:
+    runtime: python2.7
+    memorySize: 128
+    handler: lambda_function.lambda_handler
+    layers:
+    - {Ref: HelloWorldPythonDepsLambdaLayer}
+    timeout: 30

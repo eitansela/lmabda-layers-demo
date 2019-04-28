@@ -1,0 +1,16 @@
+service: example-no-layers
+
+provider:
+  name: aws
+  region: eu-west-1
+  cfLogs: true
+
+package:
+  artifact: lambda_code.zip
+
+functions:
+  hello-world:
+    runtime: python2.7
+    memorySize: 128
+    handler: lambda_function.lambda_handler
+    timeout: 30
