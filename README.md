@@ -10,6 +10,16 @@ In this demo we will deploy two Lambda function:
 We will use the serverless framework in this example.
 For more details: https://serverless.com/
 
+### Install serverless
+```
+npm install -g serverless
+```
+
+### Clone git repository
+```
+git clone https://github.com/eitansela/lmabda-layers-demo.git
+```
+
 ### ZIP the Python files into a Lambda package
 For hello-world-no-layers Lambda Function
 ```
