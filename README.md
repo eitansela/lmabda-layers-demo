@@ -18,6 +18,7 @@ npm install -g serverless
 ### Clone git repository
 ```
 git clone https://github.com/eitansela/lmabda-layers-demo.git
+cd lmabda-layers-demo
 ```
 
 ### ZIP the Python files into a Lambda package
